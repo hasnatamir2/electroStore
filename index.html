@@ -1,0 +1,197 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Jekyll v3.8.5">
+    <title>Electro Store</title>
+
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="main.js"></script>
+
+    <!-- Custom styles for this template -->
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-md navbar-dark sticky-top bg-dark mb-3">
+        <a class="navbar-brand" href="#">electroStore</a>
+        <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> -->
+        <form class="form-inline mx-auto mt-1" style="width: 60%;">
+                <div class="input-group mb-3 w-100">
+                    <input class="form-control " type="search" placeholder="Search" aria-label="Search" style="width: 70%;">
+                <div class="input-group-append">
+                    <button class="btn btn-outline-success" type="submit" id="button-addon2">Button</button>
+                </div>
+            </div>
+        </form>
+        <div class="btn-group " role="group" aria-label="Basic example">
+            <input type="button" class="btn btn-sm btn-outline-secondary my-auto" value="sign In">
+            <input type="button" class="btn btn-sm btn-outline-secondary my-auto" value="sign Up">
+        </div>
+        <!-- <div class="collapse navbar-collapse float-right" id="navbarCollapse">
+
+        </div> -->
+    </nav>
+    <!-- main body -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 ">
+                <div class="card shadow-sm mb-5 bg-white rounded">
+                    <form action="cart/update" method="POST">
+                        <table class="table table-striped">
+                            <tr>
+                                <th>QTY</th>
+                                <th>Items Description</th>
+                                <th style="text-align: right">Item Price</th>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td class="right"><strong>Total: </strong> </td>
+                                <td class="right" style="text-align: right">$</td>
+                            </tr>
+                        </table>
+                        <div class="d-flex justify-content-around">
+                        <p><button class="btn btn-outline-dark" type="submit">Update Cart</button>
+                        <a class="btn btn-outline-secondary" href="cart">Go to Cart</a></p></div>
+                    </form>
+                </div>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-header">
+                        Categories
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Video Games
+                            <span class="badge badge-primary badge-pill">1</span></a>
+                        </li>
+                        <li href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Components & Peripherals
+                            <span class="badge badge-primary badge-pill">2</span></a>
+                        </li>
+                        <li href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Smart Electronics
+                            <span class="badge badge-primary badge-pill">1</span></a>
+                        </li>
+                        <li href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Mobiles
+                            <span class="badge badge-primary badge-pill">2</span></a>
+                        </li>
+                        <li href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Computers & Laptops
+                            <span class="badge badge-primary badge-pill">1</span></a>
+                        </li>
+                        <li href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Security & Protection
+                            <span class="badge badge-primary badge-pill">1</span></a>
+                        </li>
+                        <li href="#" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
+                                Wrist Watches
+                            <span class="badge badge-primary badge-pill">3</span></a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card shadow-sm mb-3">
+                    <div class="card-header">
+                        Most Popular
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li href="#" class="list-group-item list-group-item-action d-flex">OnePlus 7</li>
+                        <li href="#" class="list-group-item list-group-item-action d-flex">Mi Band 3</li>
+                        <li href="#" class="list-group-item list-group-item-action d-flex">Xiomi Smart band 3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="card bg-transparent">
+                    <h3 class="card-header mb-2 bg-success text-white font-weight-lighter">Latest Product</h3>
+                    <div class="row d-flex no-gutters justify-content-around">
+                    <div class="col-md-3 col-sm-5 mx-2 mb-3 p-0 shadow-sm rounded border border-light">
+                        <a href="product.html"><img src="images/ASUS-ROG-Z390-I9-9900K.jpg" class="mx-0 my-0" style="max-width:100%; max-height: 55vh;"></a>
+                        <h5 class="price-tag text-dark font-weight-bold p-1 text-center rounded">US $23.59</h5>                        
+                        <h4 class="card-title ml-1 mb-3 font-weight-normal">Asus Rog Z390</h4>
+                        <div class="mt-5"><a href="#" class="btn btn-outline-primary add-to-cart">Add to cart</a></div>
+                    </div>
+                    <div class="col-md-3 col-sm-5 mx-2 mb-3 p-0 shadow-sm  rounded border border-light ">
+                        <a href="produt.html"><img src="images/BESDER-HD.jpg" class="mx-0 my-0" style="max-width:100%; max-height: 55vh;"></a>
+                        <h5 class="price-tag text-dark font-weight-bold p-1 text-center rounded">US $23.59</h5>         
+                        <h4 class="card-title ml-1 font-weight-normal">Besender</h4>
+                        <div class="mt-5"><a href="#" class="btn btn-outline-primary add-to-cart">Add to cart</a></div>
+                    </div>
+                    <div class="col-md-3 col-sm-5 mx-2 mb-3 p-0 shadow-sm  rounded border border-light">
+                        <a href="product.html"><img src="images/CURREN-men-sport.jpg" class="mx-0 my-0" style="max-width:100%; max-height: 55vh;"></a>
+                        <h5 class="price-tag text-dark font-weight-bold p-1 text-center rounded">US $23.59</h5>                        
+                        <h4 class="card-title ml-1 font-weight-normal">Current Men</h4>
+                        <div class="mt-5"><a href="#" class="btn btn-outline-primary add-to-cart">Add to cart</a></div>
+                    </div>
+                    <div class="col-md-3 col-sm-5 mx-2 mb-3 p-0 shadow-sm  rounded border border-light">
+                        <a href="produt.html"><img src="images/Crrju-Fashion-Men.jpg" class="mx-0 my-0" style="max-width:100%; max-height: 55vh;"></a>
+                        <h5 class="price-tag text-dark font-weight-bold p-1 text-center rounded">US $23.59</h5>                        
+                        <h4 class="card-title ml-1 font-weight-normal">Crrju Fashion men</h4>
+                        <div class="mt-5"><a href="#" class="btn btn-outline-primary add-to-cart">Add to cart</a></div>
+                    </div>
+                    <div class="col-md-3 col-sm-5 mx-2 mb-3 p-0   rounded border border-light">
+                        <a href="product.html"><img src="images/Mini-PC-WiFi-adapter-150M.jpg" class="mx-0 my-0" style="max-width:100%; max-height: 55vh;"></a>
+                        <h5 class="price-tag text-dark font-weight-bold p-1 text-center rounded">US $23.59</h5>                        
+                        <h4 class="card-title ml-1 font-weight-normal">Mini PC wifi</h4>
+                        <div class="mt-5"><a href="#" class="btn btn-outline-primary add-to-cart">Add to cart</a></div>
+                    </div>
+                    <div class="card col-md-3 col-sm-5 mx-2 mb-3 no-gutters bg-light shadow rounded border border-light border-bottom-0">
+                        <a href="product.html"><img src="images/Xiaomi-Mi-Band-3.jpg" class="card-img-top"></a>
+                        <h5 class="price-tag text-dark font-weight-bold p-1 text-center rounded">US $23.59</h5>                        
+                        <h4 class="card-title ml-1 font-weight-normal">Xiomi Mi band 3</h4>
+                        <!-- <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <label class="input-group-text" for="inputGroupSelect01">Options</label>
+                            </div>
+                            <form class="form-inline mx-auto mt-1" method="POST" action="<?php base_url(); ?>cart/add">
+                                <label>QTY:</label> 
+                            </form>
+                            <a href="#" class="btn btn-outline-primary w-100 ">Add to cart</a>
+                        </div> 
+                        <form class="form-inline mx-auto mt-1" style="width: 95%;">
+                                <div class="input-group w-100">
+                                    <input type="number" class="qty form-control" name="qty" value="1">
+                                    <input type="hidden" name="item_number" value="<?php echo $product->id ?>">
+                                    <input type="hidden" name="price" value="<?php echo $product->price ?>">
+                                    <input type="hidden" name="title" value="<?php echo $product->title ?>">
+                                    <div class="input-group-prepend">
+                                    <span class="input-group-text">QTY: </span>
+                                </div>
+                            </div>
+                        </form>-->
+                        <form class="form-inline mx-auto mt-1" style="width: 100%; max-block-size: 35%;">
+                                <div class="input-group mb-5 w-100">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">QTY: </span>
+                                    </div>
+                                    <input type="number" class="qty form-control" name="qty" value="1">
+                                    <input type="hidden" name="item_number" value="<?php echo $product->Id ?>">
+                                    <input type="hidden" name="price" value="<?php echo $product->price ?>">
+                                    <input type="hidden" name="title" value="<?php echo $product->title ?>"><br>
+                                </div>        
+                                <div class="mt-5">
+                                <a href="#" class="btn btn-outline-primary d-block add-to-cart">Add to cart</a></div>
+                            </form>
+                    </div>                    
+                </div>
+            </div>
+            </div>
+            </div>
+        </div>
+        <footer class="bg-secondary p-5 mt-2">
+            <div class="container mb-0 text-light p-2 text-center">
+                electro store &copy; 2019, All Right Reserved
+            </div>
+        </footer>
+    </body>
+</html>
